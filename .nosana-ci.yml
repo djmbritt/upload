@@ -3,7 +3,7 @@ nosana:
   description: Nosana Deno Template
 
 global:
-  image: denoland/deno:lts
+  image: denoland/deno:latest
 
   # Git, trigger on these branches
   trigger:
@@ -28,3 +28,6 @@ jobs:
   - name: say
     commands:
       - deno run --allow-env --allow-read npm:cowsay@1.5.0/cowthink Nosana is Fire!
+    artifacts:
+     - name: hello
+       path: ./
