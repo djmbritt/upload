@@ -23,7 +23,7 @@ jobs:
       - deno test
       - deno bench
       - deno compile main.ts
-      - ls -lah project
+      - ls -lah project/project
 
   # Deno run external script
   - name: say
