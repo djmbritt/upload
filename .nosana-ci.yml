@@ -30,4 +30,5 @@ jobs:
       - deno run --allow-env --allow-read npm:cowsay@1.5.0/cowthink Nosana is Fire!
     artifacts:
      - name: hello
-       path: ./
+       path: ./doesnotexist
+       
