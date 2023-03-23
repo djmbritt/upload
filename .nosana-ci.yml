@@ -3,7 +3,7 @@ nosana:
   description: Nosana Deno Template
 
 global:
-  image: denoland/deno:latest
+  image: alpine:latest
 
   # Git, trigger on these branches
   trigger:
@@ -18,18 +18,6 @@ jobs:
   # Init Deno
   - name: install
     commands:
-      - deno init
-      - deno run main.ts
-      - deno test
-      - deno bench
-      - deno compile main.ts
-      - ls -lah project/project
-
-  # Deno run external script
-  - name: say
-    commands:
-      - deno run --allow-env --allow-read npm:cowsay@1.5.0/cowthink Nosana is Fire!
-    artifacts:
-     - name: hello
-       path: ./doesnotexist
-       
+      - env
+      - ls -lah
+      - cwd
