@@ -20,4 +20,4 @@ jobs:
     commands:
       - env
       - ls -lah
-      - cwd
+      - pwd
