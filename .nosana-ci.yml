@@ -3,7 +3,6 @@ nosana:
   description: Nosana Deno Template
 
 global:
-  image: alpine:latest
 
   # Git, trigger on these branches
   trigger:
